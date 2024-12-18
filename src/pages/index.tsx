@@ -1,30 +1,18 @@
-import clsx from 'clsx';
-import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
-import Heading from '@theme/Heading';
-
-import styles from './index.module.css';
+import BackgroundWrapper from '@site/src/components/Layout/BackgroundWrapper';
+import BoundaryBox from '@site/src/components/Layout/BoundaryBox';
+import FeaturedTitleWithText from '@site/src/components/Layout/FeaturedTitleWithText';
+import WelcomeHero from '../components/WelcomeHero';
 
 function HomepageHeader() {
-  const {siteConfig} = useDocusaurusContext();
+  const { siteConfig } = useDocusaurusContext();
   return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
-      <div className="container">
-        <Heading as="h1" className="hero__title">
-          {siteConfig.title}
-        </Heading>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
-          <Link
-            className="button button--secondary button--lg"
-            to="/docs/intro">
-            Docusaurus Tutorial - 5min ⏱️
-          </Link>
-        </div>
-      </div>
-    </header>
+    <WelcomeHero
+      title={siteConfig.title}
+      description="Moxietech is technology company that specializes in blockchain technology. We are currently working on a Cardano stake pool called MoxiePool."
+    />
   );
 }
 
@@ -32,11 +20,36 @@ export default function Home(): JSX.Element {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      title={`${siteConfig.title}`}
+      description="MoxieTech website to promote MoxiePool and Cardano blockchain.">
       <HomepageHeader />
       <main>
-        <HomepageFeatures />
+        <BackgroundWrapper backgroundType={"zoom"}>
+          <BoundaryBox>
+          <FeaturedTitleWithText
+              title="Our World Is Changing. Together, We Can Change It For The Better."
+              description={[
+                "Cardano is a proof-of-stake blockchain platform: the first to be founded on [peer-reviewed research](/research) \
+                and developed through evidence-based methods. It combines pioneering technologies \
+                to provide unparalleled security and sustainability to decentralized applications, systems, \
+                and societies.",
+
+                "With a leading team of engineers, Cardano exists to redistribute power from unaccountable \
+                structures to the margins – to individuals – and be an enabling force for positive change and progress.",
+              ]}
+              quote={[
+                "A History Of Impossible,",
+                <br key="line1" />, /* FIXME: too hacky */
+                "Made Possible",
+              ]}
+              buttonLabel="Use Cases"
+              buttonLink="/use-cases"
+              headingDot={true}
+            />
+
+          </BoundaryBox>
+        </BackgroundWrapper>
+        {/* <HomepageFeatures /> */}
       </main>
     </Layout>
   );
