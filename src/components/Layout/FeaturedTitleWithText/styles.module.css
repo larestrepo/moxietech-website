@@ -2,6 +2,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: left;
+  /* position: center; */
 }
 
 .rightColumn {
@@ -12,4 +13,12 @@
 
 .quote {
   margin-bottom: 40px;
+}
+
+.sectionPosition {
+  position: center; /* or absolute, fixed, etc. based on your requirement */
+  top: 0; /* adjust as needed */
+  left: 0; /* adjust as needed */
+  right: 0; /* adjust as needed */
+  bottom: 0; /* adjust as needed */
 }

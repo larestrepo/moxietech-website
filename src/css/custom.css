@@ -57,7 +57,45 @@ html {
   padding-left: 10px;
 }
 
-/* .navbar__item {
+.navbar__item {
   padding-top: 15px;
   padding-bottom: 15px;
-} */
+}
+
+.headingDot {
+  position: relative;
+}
+
+.headingDot::before {
+  content: "";
+  position: absolute;
+  top: -1.5rem;
+  left: 0;
+  width: 0.7rem;
+  height: 0.7rem;
+  border-top-left-radius: 100%;
+  border-top-right-radius: 100%;
+  border-bottom-right-radius: 100%;
+  border-bottom-left-radius: 100%;
+  background-color: rgb(255, 118, 118);
+}
+
+a {
+  outline-width: 0.5rem;
+  color: var(--ifm-color-primary);
+  -webkit-transition: color 0.1s ease-in-out;
+  transition: color 0.1s ease-in-out;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+} /*!sc*/
+
+img {
+  max-width: 100%;
+  height: auto;
+} /*!sc*/
+
+
+.tabIcon {
+  margin-right: 8px; /* Add some space between the icon and the text */
+  color: var(--ifm-color-primary);
+}

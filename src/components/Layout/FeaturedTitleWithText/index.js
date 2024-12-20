@@ -17,9 +17,8 @@ export default function FeaturedTitleWithText({
   buttonLink,
   headingDot,
 }) {
-
   return (
-    <div>
+    <div className={clsx("className", styles.sectionPosition)}>
       <div className="row">
         <div className={clsx("col col--6", styles.leftColumn)}>
           <h1 className={clsx({ headingDot: headingDot })}>{title}</h1>
