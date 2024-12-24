@@ -48,7 +48,8 @@ html {
 
 /* buttons */
 .button {
-  border-radius: 30px;
+  border-radius: 20px;
+  border-top-left-radius: 0%;
   font-weight: 400;
 }
 
@@ -73,11 +74,11 @@ html {
   left: 0;
   width: 0.7rem;
   height: 0.7rem;
-  border-top-left-radius: 100%;
+  border-top-left-radius: 0%;
   border-top-right-radius: 100%;
   border-bottom-right-radius: 100%;
   border-bottom-left-radius: 100%;
-  background-color: rgb(255, 118, 118);
+  background-color: #095b2e;
 }
 
 a {

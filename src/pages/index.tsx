@@ -9,6 +9,7 @@ import styles from '@site/src/pages/index.module.css';
 import VisionBox from '@site/src/components/Layout/VisionBox';
 import Divider from '@site/src/components/Layout/Divider';
 import TitleWithText from '@site/src/components/Layout/TitleWithText';
+import DottedImageWithText from '@site/src/components/Layout/DottedImageWithText';
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
@@ -30,14 +31,14 @@ export default function Home(): JSX.Element {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`${siteConfig.title}`}
+      title="Home"
       description="We are a software and technology company specializing in blockchain solutions. Our mission is to build a better world through blockchain technology.">
       <HomepageHeader />
       <div></div>
       <main>
       <BackgroundWrapper backgroundType={"zoom"}>
           <BoundaryBox>
-            <FeaturedTitleWithText
+            {/* <FeaturedTitleWithText
                 title="MOXIEPOOL"
                 description={[
                   "Pool latinoamericano, primer pool colombiano y que ha existido desde el principio de Cardano.",
@@ -47,11 +48,46 @@ export default function Home(): JSX.Element {
                 ]}
                 quote={[
                   "Seguimos y seguiremos mejorando en todo sentido",
-                  <br key="line1" />, /* FIXME: too hacky */
+                  <br key="line1" />, 
                   "Todo es posible con constancia",
                 ]}
                 buttonLabel="Use Cases"
                 buttonLink="/use-cases"
+                headingDot={true}
+              /> */}
+
+
+            <Divider text="MOXIEPOOL" />
+            
+            <DottedImageWithText
+                imageName="undraw_engineering-team_13ax"
+                title="Latin American stake pool and first in Colombia"
+                text={[
+                  "We are proud to be a Latin American stake pool operator and the first pool in Colombia on Cardano's network since the launch of Shelley.",
+                  "Since then we have maintaned consistet operations, \
+                  contributing to block validation and the growth of the Cardano ecossystem in the region",
+                  // We are a proud member of the Cardano community and are actively involved in the network's development.",
+                ]}
+                headingDot={true}
+              />
+            <DottedImageWithText
+                imageName="undraw_educator_6dgp"
+                title="Blockchain Expertise"
+                text={[
+                  "Our stake pool is managed by a team of highly skilled administrators with extensive knowledge in blockchain technologies, decentralized systems, and Web3 innovation.", 
+                  "With a strong commitment to professionalism, we ensure seamless pool operation, \
+                  robust security measures, and active contributions to the network's decentralization. By leveraging our expertise, we aim to provide delegators with reliable rewards while fostering the growth and integrity of the blockchain ecosystem.",
+                ]}
+                headingDot={true}
+              />
+            <DottedImageWithText
+                imageName="undraw_content-team_i066"
+                title="Promoting Cardano Adoption in Latin America"
+                text={[
+                  "We are dedicated to advancing Cardano adoption across Latin America by leading innovative projects that showcase the real-world potential of blockchain technology.", 
+                  "Alongside these initiatives, we actively engage with the local community by providing educational content not only on blockchain but also on other emerging technologies such as AI and IoT. \
+                  Our mission is to foster a strong, inclusive community in the region, connected through technology and dedicated to driving innovation and accessibility."
+                ]}
                 headingDot={true}
               />
 
