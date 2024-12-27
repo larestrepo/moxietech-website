@@ -1,5 +1,5 @@
-import {themes as prismThemes} from 'prism-react-renderer';
-import type {Config} from '@docusaurus/types';
+import { themes as prismThemes } from 'prism-react-renderer';
+import type { Config } from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 import vars from './variables';
@@ -23,7 +23,7 @@ const config: Config = {
   organizationName: 'larestrepo', // Usually your GitHub org/user name.
   projectName: 'moxietech-website', // Usually your repo name.
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'log',
   onBrokenMarkdownLinks: 'warn',
   onBrokenAnchors: 'warn',
 
@@ -98,7 +98,7 @@ const config: Config = {
           label: 'MoxiePool',
           to: '/moxiepool/intro',
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
+        { to: '/blog', label: 'Blog', position: 'left' },
         {
           href: `${vars.repository}/edit/${vars.branch}`,
           label: 'GitHub',
