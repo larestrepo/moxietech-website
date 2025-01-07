@@ -13,7 +13,7 @@ function WelcomeHero({ title, description }) {
           <p className="hero__subtitle">{description}</p>
         </div>
         <div className={styles.cta}>
-          <Link
+          {/* <Link
             className={clsx("button button--primary button--lg", styles.button)}
             to="/where-to-get-ada"
           >
@@ -24,7 +24,7 @@ function WelcomeHero({ title, description }) {
             to="/developers"
           >
             Start Building
-          </Link>
+          </Link> */}
         </div>
 
         {/* <div className="sectionCaret">

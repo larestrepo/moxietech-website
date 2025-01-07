@@ -61,7 +61,7 @@ const config: Config = {
           },
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl: `${vars.repository}/edit/${vars.branch}`,
+          // editUrl: `${vars.repository}/edit/${vars.branch}`,
           // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
@@ -84,23 +84,23 @@ const config: Config = {
         src: 'img/logo.png',
       },
       items: [
+        // {
+        //   // type: 'docSidebar',
+        //   // sidebarId: 'docsSidebar',
+        //   position: 'left',
+        //   label: 'Docs',
+        //   to: '/docs/intro',
+        // },
+        // {
+        //   // type: 'docSidebar',
+        //   // sidebarId: 'moxiePoolSidebar',
+        //   position: 'left',
+        //   label: 'MoxiePool',
+        //   to: '/moxiepool/intro',
+        // },
+        // { to: '/blog', label: 'Blog', position: 'left' },
         {
-          // type: 'docSidebar',
-          // sidebarId: 'docsSidebar',
-          position: 'left',
-          label: 'Docs',
-          to: '/docs/intro',
-        },
-        {
-          // type: 'docSidebar',
-          // sidebarId: 'moxiePoolSidebar',
-          position: 'left',
-          label: 'MoxiePool',
-          to: '/moxiepool/intro',
-        },
-        { to: '/blog', label: 'Blog', position: 'left' },
-        {
-          href: `${vars.repository}/edit/${vars.branch}`,
+          href: `${vars.repository}`,
           label: 'GitHub',
           position: 'right',
         },
@@ -109,34 +109,38 @@ const config: Config = {
     footer: {
       style: 'dark',
       links: [
+        // {
+        //   title: 'Docs',
+        //   items: [
+        //     {
+        //       label: 'Tutorial',
+        //       to: '/docs/intro',
+        //     },
+        //   ],
+        // },
         {
-          title: 'Docs',
-          items: [
-            {
-              label: 'Tutorial',
-              to: '/docs/intro',
-            },
-          ],
-        },
-        {
-          title: 'Community',
+          title: 'SocialLinks',
           items: [
             {
               label: 'X',
-              href: 'https://x.com/LARestrepoMu',
+              href: `${vars.socialLinks.twitter}`,
+            },
+            {
+              label: 'Telegram',
+              href: `${vars.socialLinks.telegram}`,
             },
           ],
         },
         {
           title: 'More',
           items: [
-            {
-              label: 'Blog',
-              to: '/blog',
-            },
+            // {
+            //   label: 'Blog',
+            //   to: '/blog',
+            // },
             {
               label: 'GitHub',
-              href: `${vars.repository}/edit/${vars.branch}`,
+              href: `${vars.repository}`,
             },
           ],
         },

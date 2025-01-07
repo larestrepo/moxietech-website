@@ -25,3 +25,67 @@
 .bold {
   font-weight: bold;
 }
+
+.item-align {
+  display: flex;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  flex-wrap: wrap;
+  /* Allow columns to wrap to the next line */
+}
+
+.column {
+  flex: 1;
+  margin: 0 10px;
+  min-width: 300px;
+  /* Ensure columns don't get too narrow */
+}
+
+.dataTable {
+  width: 100%;
+  border-collapse: collapse;
+  display: table;
+  border: 1px solid #ccc;
+}
+
+.dataTable td {
+  padding: 8px;
+  border: none;
+  /* Remove borders */
+}
+
+.dataTable tr {
+  border: none;
+  /* Remove borders */
+}
+
+.leftAlign {
+  text-align: left;
+}
+
+.rightAlign {
+  text-align: right;
+}
+
+.icon {
+  margin-right: 8px;
+  /* Adjust spacing as needed */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    /* Stack columns vertically */
+  }
+
+  .column {
+    margin: 10px 0;
+    /* Add margin between stacked columns */
+  }
+}

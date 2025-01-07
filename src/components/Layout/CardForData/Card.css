@@ -1,0 +1,14 @@
+.item-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.item-title {
+    flex: 1;
+    text-align: left;
+}
+
+.item-content {
+    flex: 1;
+    text-align: right;
+}
