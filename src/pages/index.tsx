@@ -29,6 +29,7 @@ import Check from '@site/static/img/icons/check.svg';
 import Clock from '@site/static/img/icons/clock.svg';
 import UserCircle from '@site/static/img/icons/user-circle.svg';
 import ArrowTurnLeftUp from '@site/static/img/icons/arrow-turn-left-up.svg';
+import RayoAnimacion from '../components/RayoAnimacion';
 
 
 function HomepageHeader() {
@@ -54,6 +55,7 @@ export default function Home(): JSX.Element {
       title="Home"
       description="We are a software and technology company specializing in blockchain solutions. Our mission is to build a better world through blockchain technology.">
       <HomepageHeader />
+      {/* <RayoAnimacion /> */}
       <div></div>
       <main>
         <BackgroundWrapper backgroundType={"zoom"}>
