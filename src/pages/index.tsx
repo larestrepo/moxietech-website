@@ -55,7 +55,6 @@ export default function Home(): JSX.Element {
       title="Home"
       description="We are a software and technology company specializing in blockchain solutions. Our mission is to build a better world through blockchain technology.">
       <HomepageHeader />
-      {/* <RayoAnimacion /> */}
       <div></div>
       <main>
         <BackgroundWrapper backgroundType={"zoom"}>
@@ -69,7 +68,6 @@ export default function Home(): JSX.Element {
               text={[
                 "I am proud to be a Latin American stake pool operator and the first pool in Colombia on the Cardano blockchain since Shelley lunch.",
                 "Since then, I have maintained consistent operations, actively contributing to block validation and the growth of the Cardano ecosystem in the region."
-                // We are a proud member of the Cardano community and are actively involved in the network's development.",
               ]}
               headingDot={true}
             />
@@ -94,7 +92,7 @@ export default function Home(): JSX.Element {
 
           </BoundaryBox>
         </BackgroundWrapper>
-        <BackgroundWrapper backgroundType={"solidGrey"}>
+        <BackgroundWrapper id="moxiepool" backgroundType={"solidGrey"}>
           <VisionBox title={"POOL DATA"} />
           <BoundaryBox>
             <div className={styles.container}>

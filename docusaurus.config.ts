@@ -84,13 +84,13 @@ const config: Config = {
         src: 'img/logo.png',
       },
       items: [
-        // {
-        //   // type: 'docSidebar',
-        //   // sidebarId: 'docsSidebar',
-        //   position: 'left',
-        //   label: 'Docs',
-        //   to: '/docs/intro',
-        // },
+        {
+          // type: 'docSidebar',
+          // sidebarId: 'docsSidebar',
+          position: 'left',
+          label: 'MoxiePool',
+          to: '#moxiepool',
+        },
         // {
         //   // type: 'docSidebar',
         //   // sidebarId: 'moxiePoolSidebar',

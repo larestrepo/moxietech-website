@@ -6,7 +6,7 @@ import styles from "./styles.module.css";
 // most of the time you do not want to put a <BackgroundWrapper> as a child of <BoundaryBox>
 // while it is usually fine to have a <BoundaryBox as a child of a <BackgroundWrapper>
 
-export default function BackgroundWrapper({ children, backgroundType }) {
+export default function BackgroundWrapper({ id = '', children, backgroundType }) {
   // Use backgroundType to dynamically change the class for the background
   let wrapperClassName;
 
@@ -33,5 +33,5 @@ export default function BackgroundWrapper({ children, backgroundType }) {
       wrapperClassName = styles.backgroundNone;
   }
 
-  return <div className={wrapperClassName}>{children}</div>;
+  return <div id={id || undefined} className={wrapperClassName}>{children}</div>;
 }

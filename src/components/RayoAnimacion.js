@@ -57,7 +57,7 @@ const RayoAnimacion = () => {
       
   }, []);
 
-  return <canvas id="canvas" style={{ position: 'absolute', top: 0, left: 0 }} />;
+  return <canvas id="canvas" style={{ position: 'absolute', top: 0, left: 0, pointerEvents: 'none' }} />;
 };
 
 export default RayoAnimacion;

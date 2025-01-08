@@ -9,19 +9,21 @@ function WelcomeHero({ title, description }) {
   return (
     <header className={clsx("hero hero--primary", styles.heroBanner)}> 
       <div className="container">
-        <RayoAnimacion />
+      <div className={styles.animationContainer}>
+          <RayoAnimacion />
+        </div>
         <div className={styles.taglineContainer}>
           <h1 className="hero__title">{title}</h1>
           <p className="hero__subtitle">{description}</p>
         </div>
         <div className={styles.cta}>
-          {/* <Link
-            className={clsx("button button--primary button--lg", styles.button)}
-            to="/where-to-get-ada"
-          >
-            Where to get ada?
-          </Link>
           <Link
+            className={clsx("button button--primary button--lg", styles.button)}
+            to="#moxiepool"
+          >
+            MoxiePool Details
+          </Link>
+          {/* <Link
             className={clsx("button button--primary button--lg", styles.button)}
             to="/developers"
           >

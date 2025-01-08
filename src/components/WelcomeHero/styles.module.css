@@ -7,8 +7,10 @@
 
 /* Buttons */
 .cta .button {
-  margin-right: 1rem; /* space between buttons */
-  width: 240px; /* force equal width */
+  margin-right: 1rem;
+  /* space between buttons */
+  width: 240px;
+  /* force equal width */
   font-weight: normal;
 }
 
@@ -23,7 +25,8 @@ html[data-theme="dark"] .button {
 }
 
 .cta .button:last-child {
-  margin-right: 0; /* no extra margin to the right of the the last button right: */
+  margin-right: 0;
+  /* no extra margin to the right of the the last button right: */
 }
 
 .taglineContainer {
@@ -62,9 +65,11 @@ html[data-theme="dark"] .heroBanner {
     background-size: cover;
     background-position: 50% 50%;
   }
+
   .cta .button {
     margin-bottom: 1rem;
   }
+
   .taglineContainer {
     width: 100%;
   }
@@ -81,4 +86,26 @@ html[data-theme="dark"] .heroBanner {
     background-repeat: no-repeat;
     background-size: cover;
   }
+}
+
+.animationContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  /* Ensure the animation is behind other elements */
+  pointer-events: none;
+  /* Ensure the animation does not interfere with user interactions */
+}
+
+.taglineContainer {
+  position: relative;
+  z-index: 1;
+  /* Ensure the text is above the animation */
+}
+
+.cta {
+  position: relative;
+  z-index: 1;
+  /* Ensure the button is above the animation */
 }
