@@ -29,7 +29,11 @@ import Check from '@site/static/img/icons/check.svg';
 import Clock from '@site/static/img/icons/clock.svg';
 import UserCircle from '@site/static/img/icons/user-circle.svg';
 import ArrowTurnLeftUp from '@site/static/img/icons/arrow-turn-left-up.svg';
+import ClipboardIcon from '@site/static/img/icons/clipboard.svg';
 import RayoAnimacion from '../components/RayoAnimacion';
+import ImageWithText from '../components/Layout/ImageWithText';
+import Link from '@docusaurus/Link';
+import clsx from "clsx";
 
 
 function HomepageHeader() {
@@ -47,6 +51,13 @@ function HomepageHeader() {
     />
   );
 }
+
+function handleCopy(text: string) {
+  navigator.clipboard.writeText(text).catch(err => {
+    console.error('Failed to copy: ', err);
+  });
+}
+
 
 export default function Home(): JSX.Element {
   const { siteConfig } = useDocusaurusContext();
@@ -93,7 +104,7 @@ export default function Home(): JSX.Element {
           </BoundaryBox>
         </BackgroundWrapper>
         <BackgroundWrapper id="moxiepool" backgroundType={"solidGrey"}>
-          <VisionBox title={"POOL DATA"} />
+          <VisionBox title={"MOXIEPOOL DATA"} />
           <BoundaryBox>
             <div className={styles.container}>
               <div className={styles.column}>
@@ -211,6 +222,40 @@ export default function Home(): JSX.Element {
                 </table>
               </div>
             </div>
+          </BoundaryBox>
+        </BackgroundWrapper>
+        <BackgroundWrapper backgroundType={"zoom"}>
+          <BoundaryBox>
+            <ImageWithText
+              id={"governance"}
+              imageName={"purpose.png"}
+              title={"GOVERNANCE"}
+              subtitle={
+                "MoxiePool announces that it has become a Delegate Representative (DRep) in Cardano!"
+              }
+              text={[
+                "Decentralized governance is powered by the Voltaire phase in Cardano.",
+                
+                "We invite you to delegate your stake to MoxiePool and be part of the community-driven governance of the Cardano ecosystem. \
+                Together, we can help shape the future of Cardano through decentralized decision-making.",
+
+                <h2>MoxiePool Drep ID</h2>,
+                <>
+                drep1c3e65ewexytnyczk9aftyaktnf7srdzc5sjm9qcgjtdhjk6mwc5
+                  <button onClick={() => handleCopy('drep1c3e65ewexytnyczk9aftyaktnf7srdzc5sjm9qcgjtdhjk6mwc5')} style={{ cursor: 'pointer', background: 'none', border: 'none', padding: 0, marginLeft: '8px' }}>
+                     <ClipboardIcon className={styles.icon}/>
+                  </button>
+                </>,
+                  // <Link
+                  // className={clsx("button button--primary button--lg", styles.button)}
+                  // to="#moxiepool"
+                  // >
+                  //   More about Governance
+                  // </Link>
+
+              ]}
+              isImageRight={false}
+            />
           </BoundaryBox>
         </BackgroundWrapper>
       </main>

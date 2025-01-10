@@ -91,6 +91,13 @@ const config: Config = {
           label: 'MoxiePool',
           to: '#moxiepool',
         },
+        {
+          // type: 'docSidebar',
+          // sidebarId: 'docsSidebar',
+          position: 'left',
+          label: 'DRep',
+          to: '#governance',
+        },
         // {
         //   // type: 'docSidebar',
         //   // sidebarId: 'moxiePoolSidebar',
