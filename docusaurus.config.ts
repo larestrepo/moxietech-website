@@ -55,6 +55,8 @@ const config: Config = {
         },
         blog: {
           showReadingTime: true,
+          readingTime: ({content, frontMatter, defaultReadingTime}) =>
+            defaultReadingTime({content, options: {wordsPerMinute: 300}}),
           feedOptions: {
             type: ['rss', 'atom'],
             xslt: true,
@@ -89,14 +91,14 @@ const config: Config = {
           // sidebarId: 'docsSidebar',
           position: 'left',
           label: 'MoxiePool',
-          to: '#moxiepool',
+          to: '/#moxiepool',
         },
         {
           // type: 'docSidebar',
           // sidebarId: 'docsSidebar',
           position: 'left',
           label: 'DRep',
-          to: '#governance',
+          to: '/#governance',
         },
         // {
         //   // type: 'docSidebar',
@@ -105,7 +107,7 @@ const config: Config = {
         //   label: 'MoxiePool',
         //   to: '/moxiepool/intro',
         // },
-        // { to: '/blog', label: 'Blog', position: 'left' },
+        { to: '/blog', label: 'Blog', position: 'left' },
         {
           href: `${vars.repository}`,
           label: 'GitHub',
