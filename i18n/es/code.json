@@ -376,7 +376,52 @@
       "message": "Etiquetas",
       "description": "The title of the tag list page"
     },
-    "With over two decades of experience in software development and industrial technology,": {
-      "message": "Con más de dos décadas de experiencia en desarrollo de software y tecnología industrial,"
+    "Saturation": {
+      "message": "Saturación"
+    },
+    "Live Stake": {
+      "message": "Stake vivo"
+    },
+    "Active Stake": {
+      "message": "Stake activo"
+    },
+    "Declared Pledge": {
+      "message": "Pledge declarado"
+    },
+    "Active Pledge": {
+      "message": "Pledge activo"
+    },
+    "Margin fee": {
+      "message": "Costo marginal"
+    },
+    "Fixed fee": {
+      "message": "Costo fijo"
+    },
+    "Recent ROA": {
+      "message": "ROA reciente"
+    },
+    "Lifetime ROA": {
+      "message": "ROA histórico"
+    },
+    "Blocks in epoch": {
+      "message": "Bloques en la época"
+    },
+    "Estimated Blocks in Whole Epoch": {
+      "message": "Bloques estimados en toda la época"
+    },
+    "Blocks Lifetime": {
+      "message": "Bloques históricos"
+    },
+    "Lifetime Luck": {
+      "message": "Suerte histórica"
+    },
+    "Created": {
+      "message": "Creado"
+    },
+    "Delegators": {
+      "message": "Delegadores"
+    },
+    "Pledge leverage": {
+      "message": "Apalancamiento del pledge"
     }
 }

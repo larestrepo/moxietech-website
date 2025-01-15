@@ -375,5 +375,53 @@
   "theme.tags.tagsPageTitle": {
     "message": "Tags",
     "description": "The title of the tag list page"
+  },
+  "Saturation": {
+    "message": "Saturation"
+  },
+  "Live Stake": {
+    "message": "Live Stake"
+  },
+  "Active Stake": {
+    "message": "Active Stake"
+  },
+  "Declared Pledge": {
+    "message": "Declared Pledge"
+  },
+  "Active Pledge": {
+    "message": "Active Pledge"
+  },
+  "Margin fee": {
+    "message": "Margin fee"
+  },
+  "Fixed fee": {
+    "message": "Fixed fee"
+  },
+  "Recent ROA": {
+    "message": "Recent ROA"
+  },
+  "Lifetime ROA": {
+    "message": "Lifetime ROA"
+  },
+  "Blocks in epoch": {
+    "message": "Blocks in epoch"
+  },
+  "Estimated Blocks in Whole Epoch": {
+    "message": "Estimated Blocks in Whole Epoch"
+  },
+  "Blocks Lifetime": {
+    "message": "Blocks Lifetime"
+  },
+  "Lifetime Luck": {
+    "message": "Lifetime Luck"
+  },
+  "Created": {
+    "message": "Created"
+  },
+  "Delegators": {
+    "message": "Delegators"
+  },
+  "Pledge leverage": {
+    "message": "Pledge leverage"
   }
 }

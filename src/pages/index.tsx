@@ -67,7 +67,7 @@ export default function Home(): JSX.Element {
               imageName="undraw_engineering-team_13ax"
               title={<Translate>Latin American stake pool and first in Colombia</Translate>}
               text={[
-                <Translate>I am proud to be a Latin American stake pool operator and the first pool in Colombia on the Cardano blockchain since Shelley lunch.</Translate>,
+                <Translate>I am proud to be a Latin American stake pool operator and the first pool in Colombia on the Cardano blockchain since Shelley launch.</Translate>,
                 <Translate>Since then, I have maintained consistent operations, actively contributing to block validation and the growth of the Cardano ecosystem in the region.</Translate>
               ]}
               headingDot={true}

@@ -17,126 +17,128 @@ import Check from '@site/static/img/icons/check.svg';
 import Clock from '@site/static/img/icons/clock.svg';
 import UserCircle from '@site/static/img/icons/user-circle.svg';
 import ArrowTurnLeftUp from '@site/static/img/icons/arrow-turn-left-up.svg';
+import Translate from '@docusaurus/Translate';
 
 function TableData() {
 
     return (
         <div className={styles.container}>
             <div className={styles.column}>
-            <table className={styles.dataTable}>
+                <table className={styles.dataTable}>
                 <tbody>
                 <tr>
                     <td className={styles.leftAlign}>
-                    <AnchorIcon className={styles.icon} /> Ticker
+                        <AnchorIcon className={styles.icon} /> Ticker
                     </td>
                     <td className={styles.rightAlign}>MOXIE</td>
-                </tr>
-                <tr>
+                    </tr>
+                    <tr>
                     <td className={styles.leftAlign}>
-                    <PieIcon className={styles.icon} /> Saturation
+                        <PieIcon className={styles.icon} /> <Translate>Saturation</Translate>
                     </td>
                     <td className={styles.rightAlign}>0.67%</td>
-                </tr>
-                <tr>
+                    </tr>
+                    <tr>
                     <td className={styles.leftAlign}>
-                    <ArrowPointingIn className={styles.icon} /> Live Stake
+                        <ArrowPointingIn className={styles.icon} /> <Translate>Live Stake</Translate>
                     </td>
                     <td className={styles.rightAlign}>504.53k₳</td>
-                </tr>
-                <tr>
+                    </tr>
+                    <tr>
                     <td className={styles.leftAlign}>
-                    <ArrowPointingOut className={styles.icon} /> Active Stake
+                        <ArrowPointingOut className={styles.icon} /> <Translate>Active Stake</Translate>
                     </td>
-                    <td className={styles.rightAlign}>504.15k₳</td>
-                </tr>
-                <tr>
+                    <td className={styles.rightAlign}>504.53k₳</td>
+                    </tr>
+                    <tr>
                     <td className={styles.leftAlign}>
-                    <AdjustmentHorizontal className={styles.icon} /> Declared Pledge
+                        <AdjustmentHorizontal className={styles.icon} /> <Translate>Declared Pledge</Translate>
                     </td>
                     <td className={styles.rightAlign}>87.00k₳</td>
-                </tr>
-                <tr>
+                    </tr>
+                    <tr>
                     <td className={styles.leftAlign}>
-                    <AdjustmentVertical className={styles.icon} /> Active Pledge
+                        <AdjustmentVertical className={styles.icon} /> <Translate>Active Pledge</Translate>
                     </td>
                     <td className={styles.rightAlign}>122.79k₳</td>
-                </tr>
-                <tr>
+                    </tr>
+                    <tr>
                     <td className={styles.leftAlign}>
-                    <ArrowUp className={styles.icon} /> Margin fee
+                        <ArrowUp className={styles.icon} /> <Translate>Margin fee</Translate>
                     </td>
                     <td className={styles.rightAlign}>2%</td>
-                </tr>
-                <tr>
+                    </tr>
+                    <tr>
                     <td className={styles.leftAlign}>
-                    <ArrowUpTray className={styles.icon} /> Fixed fee
+                        <ArrowUpTray className={styles.icon} /> <Translate>Fixed fee</Translate>
                     </td>
                     <td className={styles.rightAlign}>340₳</td>
-                </tr>
+                    </tr>
                 </tbody>
-            </table>
+                </table>
             </div>
             <div className={styles.column}>
-            <table className={styles.dataTable}>
+                <table className={styles.dataTable}>
                 <tbody>
-                <tr>
+                    <tr>
                     <td className={styles.leftAlign}>
-                    <ChartBar className={styles.icon} /> Recent ROA
+                        <ChartBar className={styles.icon} /> <Translate>Recent ROA</Translate>
                     </td>
-                    <td className={styles.rightAlign}>0.363%</td>
-                </tr>
-                <tr>
+                    <td className={styles.rightAlign}>0.289%</td>
+                    </tr>
+                    <tr>
                     <td className={styles.leftAlign}>
-                    <PresentationChart className={styles.icon} /> Lifetime ROA
+                        <PresentationChart className={styles.icon} /> <Translate>Lifetime ROA</Translate>
                     </td>
                     <td className={styles.rightAlign}>3.92%</td>
-                </tr>
-                <tr>
+                    </tr>
+                    <tr>
                     <td className={styles.leftAlign}>
-                    <BriefCase className={styles.icon} /> Blocks in epoch
+                        <BriefCase className={styles.icon} /> <Translate>Blocks in epoch</Translate>
                     </td>
                     <td className={styles.rightAlign}>0</td>
-                </tr>
-                <tr>
+                    </tr>
+                    <tr>
                     <td className={styles.leftAlign}>
-                    <CubeTransparent className={styles.icon} /> Estimated Blocks in Whole Epoch
+                        <CubeTransparent className={styles.icon} /> <Translate>Estimated Blocks in Whole Epoch</Translate>
                     </td>
                     <td className={styles.rightAlign}>0.5</td>
-                </tr>
-                <tr>
+                    </tr>
+                    <tr>
                     <td className={styles.leftAlign}>
-                    <BuidingOffice className={styles.icon} /> Blocks Lifetime
+                        <BuidingOffice className={styles.icon} /> <Translate>Blocks Lifetime</Translate>
                     </td>
                     <td className={styles.rightAlign}>832</td>
-                </tr>
-                <tr>
+                    </tr>
+                    <tr>
                     <td className={styles.leftAlign}>
-                    <Check className={styles.icon} /> Lifetime Luck
+                        <Check className={styles.icon} /> <Translate>Lifetime Luck</Translate>
                     </td>
-                    <td className={styles.rightAlign}>100.2%</td>
-                </tr>
-                <tr>
+                    <td className={styles.rightAlign}>100.1%</td>
+                    </tr>
+                    <tr>
                     <td className={styles.leftAlign}>
-                    <Clock className={styles.icon} /> Created
+                        <Clock className={styles.icon} /> <Translate>Created</Translate>
                     </td>
                     <td className={styles.rightAlign}>31.7.2020</td>
-                </tr>
-                <tr>
+                    </tr>
+                    <tr>
                     <td className={styles.leftAlign}>
-                    <UserCircle className={styles.icon} /> Delegators
+                        <UserCircle className={styles.icon} /> <Translate>Delegators</Translate>
                     </td>
                     <td className={styles.rightAlign}>39</td>
-                </tr>
-                <tr>
+                    </tr>
+                    <tr>
                     <td className={styles.leftAlign}>
-                    <ArrowTurnLeftUp className={styles.icon} /> Pledge leverage
+                        <ArrowTurnLeftUp className={styles.icon} /> <Translate>Pledge leverage</Translate>
                     </td>
                     <td className={styles.rightAlign}>5.8</td>
-                </tr>
+                    </tr>
                 </tbody>
-            </table>
+                </table>
             </div>
-      </div>
+        </div>
+
     );
 }
 
