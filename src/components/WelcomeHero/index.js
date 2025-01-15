@@ -3,6 +3,7 @@ import clsx from "clsx";
 import styles from "./styles.module.css";
 import Link from "@docusaurus/Link";
 import RayoAnimacion from "../RayoAnimacion";
+import Translate from "@docusaurus/Translate";
 
 function WelcomeHero({ title, description }) {
 
@@ -21,14 +22,10 @@ function WelcomeHero({ title, description }) {
             className={clsx("button button--primary button--lg", styles.button)}
             to="#moxiepool"
           >
-            MoxiePool Details
+            <Translate
+              id="welcomeHero.cta"
+              description="The call to action in the hero banner">MoxiePool Details</Translate>
           </Link>
-          {/* <Link
-            className={clsx("button button--primary button--lg", styles.button)}
-            to="/developers"
-          >
-            Start Building
-          </Link> */}
         </div>
       </div>
     </header>

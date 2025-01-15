@@ -20,6 +20,11 @@ export default function DottedImageWithText({ imageName, title, text, headingDot
       return <p className="black-text">{parseMarkdownLikeText(content)}</p>;
     }
 
+      // If it's a React element, render it directly
+    if (React.isValidElement(content)) {
+      return <div className="black-text">{content}</div>;
+    }
+
     // If it's an object and has a 'list' key, render it as a list
     if (content && typeof content === 'object' && content.list) {
       return (
